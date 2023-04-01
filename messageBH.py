@@ -23,9 +23,9 @@ def writeAndEnter(text):
 def openWpp(ans):
     if(ans == 'n'):
         pyautogui.click(5,5)
-        time.sleep(1)
+        time.sleep(0.3)
         writeAndEnter('WhatsApp')
-        time.sleep(15)
+        time.sleep(10)
         return "a"
     if(ans == 's'):
         pyautogui.hotkey('alt','tab')
@@ -74,8 +74,10 @@ def makeMessage(contato, mes, aluguel, luz, iptu, condominio, internet, total):
         message2 = 'Favor enviar para essa conta:\nPIX: flavio.matheusgsilva@gmail.com (PICPAY)'
         writeAndEnter(message2)
         writeAndEnter('Qualquer problema ou duvida basta me perguntar, ok?')
-    writeAndEnter('Esse mes a conta de luz vai demorar mais um pouco para chegar por causa das tretas que houveram antes. Ao olhar com a cemig, foi-me dito que a conta de marco provavelmente chega dia 06/03')
+    writeAndEnter('A conta de luz ainda nao foi emitida, mesmo eu pedindo para alterar a data de vencimento para evitar o problema que tivemos mes passado. Assim que ela estiver disponivel eu enviarei mensagem novamente, ok?')
+    time.sleep(0.5)
     pyautogui.hotkey("ctrl","v")
+    time.sleep(1)
     pyautogui.press('enter')
     time.sleep(1)
     writeAndEnter("Assim que a conta de luz chegar eu mando mensagem novamente")
