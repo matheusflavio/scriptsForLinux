@@ -76,10 +76,6 @@ def makeMessage(contato, mes, aluguel, luz, iptu, condominio, internet, total):
         writeAndEnter('Qualquer problema ou duvida basta me perguntar, ok?')
     writeAndEnter('A conta de luz ainda nao foi emitida, mesmo eu pedindo para alterar a data de vencimento para evitar o problema que tivemos mes passado. Assim que ela estiver disponivel eu enviarei mensagem novamente, ok?')
     time.sleep(0.5)
-    pyautogui.hotkey("ctrl","v")
-    time.sleep(1)
-    pyautogui.press('enter')
-    time.sleep(1)
     writeAndEnter("Assim que a conta de luz chegar eu mando mensagem novamente")
     
 
