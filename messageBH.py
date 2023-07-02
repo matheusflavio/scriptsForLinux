@@ -36,7 +36,6 @@ def openWpp(ans):
 ans = ''
 openWpp(ans)
 
-
 def replaceCommaToDot(text):
     return text.replace(',','.')
 
